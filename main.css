@@ -1,0 +1,82 @@
+:root {
+    --sn-stylekit-base-font-size: 14px;
+
+    --sn-stylekit-font-size-p: 1rem;
+    --sn-stylekit-font-size-editor: 1.21rem;
+
+    --sn-stylekit-font-size-h6: 0.8rem;
+    --sn-stylekit-font-size-h5: 0.9rem;
+    --sn-stylekit-font-size-h4: 1rem;
+    --sn-stylekit-font-size-h3: 1.1rem;
+    --sn-stylekit-font-size-h2: 1.2rem;
+    --sn-stylekit-font-size-h1: 1.3rem;
+
+    --sn-stylekit-neutral-color: #989898;
+    --sn-stylekit-neutral-contrast-color: #dfdfe8;
+
+    --sn-stylekit-info-color: #53347e;
+    --sn-stylekit-info-color-darkened: #472d6c;
+    --sn-stylekit-info-contrast-color: #dfdfe8;
+
+    --sn-stylekit-success-color: #2b9612;
+    --sn-stylekit-success-contrast-color: #dfdfe8;
+
+    --sn-stylekit-warning-color: #53347e;
+    --sn-stylekit-warning-contrast-color: #dfdfe8;
+
+    --sn-stylekit-danger-color: #f8032c;
+    --sn-stylekit-danger-contrast-color: #dfdfe8;
+
+    --sn-stylekit-shadow-color: #c8c8c8;
+    --sn-stylekit-background-color: #1d1c1c;
+    --sn-stylekit-border-color: #36363638;
+    --sn-stylekit-foreground-color: #dfdfe8;
+
+    --sn-stylekit-contrast-background-color: #1d1c1c;
+    --sn-stylekit-contrast-foreground-color: #dfdfe8;
+    --sn-stylekit-contrast-border-color: #36363638;
+
+    --sn-stylekit-secondary-background-color: #222122;
+    --sn-stylekit-secondary-foreground-color: #dfdfe8;
+    --sn-stylekit-secondary-border-color: #e3e3e3;
+
+    --sn-stylekit-secondary-contrast-background-color: #e3e3e3;
+    --sn-stylekit-secondary-contrast-foreground-color: #2e2e2e;
+    --sn-styleki--secondary-contrast-border-color: #a2a2a2;
+
+    --sn-stylekit-editor-background-color: var(--sn-stylekit-background-color);
+    --sn-stylekit-editor-foreground-color: var(--sn-stylekit-foreground-color);
+
+    --sn-stylekit-paragraph-text-color: #919198;
+
+    --sn-stylekit-input-placeholder-color: rgb(168, 168, 168);
+    --sn-stylekit-input-border-color: #e3e3e3;
+
+    --sn-stylekit-scrollbar-thumb-color: #353436;
+    --sn-stylekit-scrollbar-track-border-color: #e7e7e700;
+
+    --sn-stylekit-general-border-radius: 2px;
+
+    --sn-stylekit-monospace-font: 'Ubuntu Mono', courier, monospace;
+    --sn-stylekit-sans-serif-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+    --sn-stylekit-grey-1: #72767e;
+    --sn-stylekit-grey-2: #bbbec4;
+    --sn-stylekit-grey-3: #2e2e2e;
+    --sn-stylekit-grey-4: #eeeff1;
+    --sn-stylekit-grey-4-opacity-variant: #bbbec40f;
+    --sn-stylekit-grey-5: #f4f5f7;
+    --sn-stylekit-grey-6: #e5e5e5;
+
+    --sn-stylekit-accessory-tint-color-1: #086dd6;
+    --sn-stylekit-accessory-tint-color-2: #ea6595;
+    --sn-stylekit-accessory-tint-color-3: #ebad00;
+    --sn-stylekit-accessory-tint-color-4: #7049cf;
+    --sn-stylekit-accessory-tint-color-5: #1aa772;
+    --sn-stylekit-accessory-tint-color-6: #f28c52;
+
+    /* Overrides */
+    --editor-title-bar-border-bottom-color: var(--sn-stylekit-border-color);
+    --navigation-item-selected-background-color: #2e2e2e7d;
+}
