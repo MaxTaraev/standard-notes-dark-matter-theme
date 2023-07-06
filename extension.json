@@ -12,9 +12,9 @@
     "latest_url": "https://raw.githubusercontent.com/MaxTaraev/standard-notes-dark-matter-theme/main/extension.json",
     "dock_icon": {
         "type": "circle",
-        "background_color": "#adadad",
-        "foreground_color": "#ffffff",
-        "border_color": "#ffffff"
+        "background_color": "#5e3b8f",
+        "foreground_color": "#dfdfe8",
+        "border_color": "#dfdfe8"
     },
     "statusBar": "dark-content"
 }
