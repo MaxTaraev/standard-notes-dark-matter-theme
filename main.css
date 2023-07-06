@@ -11,25 +11,26 @@
     --sn-stylekit-font-size-h2: 1.2rem;
     --sn-stylekit-font-size-h1: 1.3rem;
 
-    --sn-stylekit-neutral-color: #989898;
+    --sn-stylekit-neutral-color: #dfdfe8;
     --sn-stylekit-neutral-contrast-color: #dfdfe8;
 
-    --sn-stylekit-info-color: #53347e;
-    --sn-stylekit-info-color-darkened: #472d6c;
+    --sn-stylekit-info-color: #5e3b8f;
+    --sn-stylekit-info-color-darkened: #5e3b8f;
     --sn-stylekit-info-contrast-color: #dfdfe8;
+    --sn-stylekit-info-backdrop-color: #bbbec40f;
 
-    --sn-stylekit-success-color: #2b9612;
+    --sn-stylekit-success-color: #2e2e2e;
     --sn-stylekit-success-contrast-color: #dfdfe8;
 
-    --sn-stylekit-warning-color: #53347e;
+    --sn-stylekit-warning-color: #5e3b8f;
     --sn-stylekit-warning-contrast-color: #dfdfe8;
 
-    --sn-stylekit-danger-color: #f8032c;
+    --sn-stylekit-danger-color: #cd1538;
     --sn-stylekit-danger-contrast-color: #dfdfe8;
 
     --sn-stylekit-shadow-color: #c8c8c8;
     --sn-stylekit-background-color: #1d1c1c;
-    --sn-stylekit-border-color: #36363638;
+    --sn-stylekit-border-color: #36363600;
     --sn-stylekit-foreground-color: #dfdfe8;
 
     --sn-stylekit-contrast-background-color: #1d1c1c;
@@ -47,7 +48,7 @@
     --sn-stylekit-editor-background-color: var(--sn-stylekit-background-color);
     --sn-stylekit-editor-foreground-color: var(--sn-stylekit-foreground-color);
 
-    --sn-stylekit-paragraph-text-color: #919198;
+    --sn-stylekit-paragraph-text-color: #929196;
 
     --sn-stylekit-input-placeholder-color: rgb(168, 168, 168);
     --sn-stylekit-input-border-color: #e3e3e3;
@@ -66,7 +67,7 @@
     --sn-stylekit-grey-3: #2e2e2e;
     --sn-stylekit-grey-4: #eeeff1;
     --sn-stylekit-grey-4-opacity-variant: #bbbec40f;
-    --sn-stylekit-grey-5: #f4f5f7;
+    --sn-stylekit-grey-5: #2e2e2e;
     --sn-stylekit-grey-6: #e5e5e5;
 
     --sn-stylekit-accessory-tint-color-1: #086dd6;
@@ -77,6 +78,9 @@
     --sn-stylekit-accessory-tint-color-6: #f28c52;
 
     /* Overrides */
-    --editor-title-bar-border-bottom-color: var(--sn-stylekit-border-color);
+    --editor-title-bar-border-bottom-color: #2e2e2e7d;
     --navigation-item-selected-background-color: #2e2e2e7d;
+    --item-cell-selected-background-color: #2f2e3061;
+    --items-column-border-left-color: #36363600;
+    --items-column-border-right-color: #2e2e2e7d;
 }
