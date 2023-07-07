@@ -2,7 +2,7 @@
     --foreground-color: #dfdfe8;
     --background-color: #1d1c1c;
     --highlight-color: #5e3b8f;
-    --border-color: #36363600;
+    --border-color: transparent;
     --sn-component-foreground-color: var(--foreground-color);
     --sn-component-background-color: transparent;
     --sn-component-foreground-highlight-color: var(--highlight-color);
@@ -12,25 +12,26 @@
     --sn-stylekit-passive-color-3: #2e2e2e;
     --sn-stylekit-passive-color-4: #222122;
     --sn-stylekit-passive-color-5: #2e2e2e9e;
+    --sn-stylekit-passive-color-4-opacity-variant: #bbbec40f;
     --sn-stylekit-shadow-color: #000000;
     --sn-stylekit-info-color: var(--highlight-color);
     --sn-stylekit-info-contrast-color: var(--foreground-color);
-    --sn-stylekit-neutral-color: #7c7c7c;
-    --sn-stylekit-neutral-contrast-color: #ffffff;
+    --sn-stylekit-neutral-color: var(--foreground-color);
+    --sn-stylekit-neutral-contrast-color: var(--foreground-color);
     --sn-stylekit-success-color: #2e2e2ed4;
-    --sn-stylekit-success-contrast-color: #ffffff;
+    --sn-stylekit-success-contrast-color: var(--foreground-color);
     --sn-stylekit-warning-color: #cc8800;
-    --sn-stylekit-warning-contrast-color: #ffffff;
-    --sn-stylekit-danger-color: #f80324;
-    --sn-stylekit-danger-contrast-color: #ffffff;
+    --sn-stylekit-warning-contrast-color: var(--foreground-color);
+    --sn-stylekit-danger-color: #cd1538;
+    --sn-stylekit-danger-contrast-color: var(--foreground-color);
     --sn-stylekit-editor-background-color: var(--sn-stylekit-background-color);
     --sn-stylekit-editor-foreground-color: var(--sn-stylekit-foreground-color);
     --sn-stylekit-background-color: var(--background-color);
     --sn-stylekit-foreground-color: var(--foreground-color);
-    --sn-stylekit-border-color: #181a1b;
-    --sn-stylekit-contrast-background-color: #000000;
-    --sn-stylekit-contrast-foreground-color: #ffffff;
-    --sn-stylekit-contrast-border-color: #000000;
+    --sn-stylekit-border-color: var(--border-color);
+    --sn-stylekit-contrast-background-color: var(--background-color);
+    --sn-stylekit-contrast-foreground-color: var(--foreground-color);
+    --sn-stylekit-contrast-border-color: transparent;
     --sn-stylekit-secondary-background-color: var(--sn-stylekit-passive-color-4);
     --sn-stylekit-secondary-foreground-color: #ffffff;
     --sn-stylekit-secondary-border-color: #000000;
@@ -43,24 +44,25 @@
     --sn-desktop-titlebar-ui-color: var(--foreground-color);
     --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
     --sn-stylekit-scrollbar-track-border-color: var(--border-color);
-    --sn-stylekit-scrollbar-thumb-color: var(--sn-stylekit-info-color);
+    --sn-stylekit-scrollbar-thumb-color: #2e2e2eb3;
     --sn-stylekit-menu-border: 1px solid #424242;
-    --navigation-item-selected-background-color: var(--background-color);
+    --navigation-item-selected-background-color: #2f2e30a8;
     --normal-button-background-color: var(--sn-stylekit-passive-color-5);
+    --sn-stylekit-accessory-tint-color-1: #5e3b8f;
 
     /* Overrides */
     --modal-background-color: var(--sn-stylekit-background-color);
     --editor-header-bar-background-color: var(--sn-stylekit-background-color);
     --editor-background-color: var(--sn-stylekit-editor-background-color);
     --editor-foreground-color: var(--sn-stylekit-editor-foreground-color);
-    --editor-title-bar-border-bottom-color: var(--sn-stylekit-border-color);
+    --editor-title-bar-border-bottom-color: var(--sn-stylekit-success-color);
     --editor-title-input-color: var(--sn-stylekit-editor-foreground-color);
     --editor-pane-background-color: var(--sn-stylekit-background-color);
     --editor-pane-editor-background-color: var(--sn-stylekit-editor-background-color);
     --editor-pane-editor-foreground-color: var(--sn-stylekit-editor-foreground-color);
     --editor-pane-component-stack-item-background-color: var(--sn-stylekit-background-color);
     --text-selection-color: var(--sn-stylekit-info-contrast-color);
-    --text-selection-background-color: var(--sn-stylekit-info-color);
+    --text-selection-background-color: #323034;
     --note-preview-progress-color: var(--sn-stylekit-info-color);
     --note-preview-progress-background-color: var(--sn-stylekit-passive-color-4-opacity-variant);
     --note-preview-selected-progress-color: var(--sn-stylekit-secondary-background-color);
@@ -70,7 +72,7 @@
     --items-column-border-left-color: var(--sn-stylekit-border-color);
     --items-column-border-right-color: var(--sn-stylekit-border-color);
     --items-column-search-background-color: var(--sn-stylekit-contrast-background-color);
-    --item-cell-selected-background-color: var(--sn-stylekit-contrast-background-color);
+    --item-cell-selected-background-color: #2f2e3061;
     --item-cell-selected-border-left-color: var(--sn-stylekit-info-color);
     --navigation-column-background-color: var(--sn-stylekit-secondary-background-color);
     --navigation-section-title-color: var(--sn-stylekit-secondary-foreground-color);
@@ -78,9 +80,32 @@
     --navigation-item-count-color: var(--sn-stylekit-neutral-color);
     --navigation-item-selected-background-color: rgb(253, 253, 253);
     --preferences-navigation-icon-color: var(--sn-stylekit-neutral-color);
-    --preferences-navigation-selected-background-color: var(--sn-stylekit-info-backdrop-color);
+    --preferences-navigation-selected-background-color: transparent;
     --dropdown-menu-radio-button-inactive-color: var(--sn-stylekit-passive-color-1);
-    --panel-resizer-background-color: var(--sn-stylekit-secondary-contrast-background-color);
+    --panel-resizer-background-color: var(--editor-title-bar-border-bottom-color);
     --link-element-color: var(--sn-stylekit-info-color);
     --normal-button-background-color: var(--sn-stylekit-background-color);
+}
+
+/* Custom element colors */
+.mb-3.flex.max-w-full.flex-col.rounded.border.border-solid.border-border.bg-default.p-6 {
+    background-color: var(--sn-stylekit-passive-color-4);
+}
+
+#button-0:hover {
+    background-color: var(--item-cell-selected-background-color);
+}
+
+.preferences-menu-item.selected:hover {
+    border-color: transparent;
+    background-color: var(--item-cell-selected-background-color);
+}
+
+.preferences-menu-item:hover {
+    background-color: var(--item-cell-selected-background-color);
+}
+
+[role="search"]>div {
+    background-color: var(--item-cell-selected-background-color);
+    border-color: transparent;
 }
