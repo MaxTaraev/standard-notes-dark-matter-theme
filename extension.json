@@ -8,8 +8,8 @@
     "url": "https://cdn.jsdelivr.net/gh/MaxTaraev/standard-notes-dark-matter-theme@v1.1/main.css",
     "download_url": "https://github.com/MaxTaraev/standard-notes-dark-matter-theme/archive/refs/tags/v1.1.zip",
     "marketing_url": "https://github.com/MaxTaraev/standard-notes-dark-matter-theme",
-    "thumbnail_url": "https://raw.githubusercontent.com/MaxTaraev/standard-notes-dark-matter-theme/main/preview.png",
-    "latest_url": "https://raw.githubusercontent.com/MaxTaraev/standard-notes-dark-matter-theme/main/extension.json",
+    "thumbnail_url": "https://raw.githubusercontent.com/MaxTaraev/standard-notes-dark-matter-theme/new-main.css/preview.png",
+    "latest_url": "https://raw.githubusercontent.com/MaxTaraev/standard-notes-dark-matter-theme/new-main.css/extension.json",
     "dock_icon": {
         "type": "circle",
         "background_color": "#5e3b8f",
