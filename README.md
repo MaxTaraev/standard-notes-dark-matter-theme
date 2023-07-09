@@ -10,6 +10,6 @@
 
 2. General > Advanced options
 
-3. Scroll down and paste the installation link in the "Install External Plugin" field
+3. Scroll down and paste the installation link in the `Install External Plugin` field
 
-4. Click "Install"
+4. Click `Install`
