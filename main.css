@@ -120,14 +120,6 @@
     border-bottom-color: var(--sn-stylekit-success-color);
 }
 
-#navigation {
-    font-weight: 500;
-}
-
-.font-semibold {
-    font-weight: 500;
-}
-
 .text-passive-2 {
     color: var(--sn-stylekit-paragraph-text-color);
 }
