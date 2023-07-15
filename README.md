@@ -4,7 +4,7 @@
 ![Preview](preview.png)
 
 ## Installation
-**Installation Link**: `https://raw.githubusercontent.com/MaxTaraev/standard-notes-dark-matter-theme/new-main.css/extension.json`
+**Installation Link**: `https://listed.to/p/Gky1d63Dyp`
 
 1. Open preferences menu
 
