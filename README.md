@@ -1,12 +1,12 @@
-# Dark Matter theme for Standard Notes
-> A modern dark theme for [Standard Notes](https://standardnotes.com/)
+# Standard Notes Dark Matter theme
+A modern dark theme for [Standard Notes](https://standardnotes.com/)
 
 ![Preview](preview.png)
 
 ## Installation
 **Installation Link**: `https://listed.to/p/Gky1d63Dyp`
 
-1. Open preferences menu
+1. Open the preferences menu
 
 2. General > Advanced options
 
