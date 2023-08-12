@@ -10,7 +10,7 @@
     --sn-component-inner-border-color: var(--foreground-color);
     --sn-stylekit-passive-color-0: #72767e;
     --sn-stylekit-passive-color-2: #bbbec40a;
-    --sn-stylekit-passive-color-3: #2d2d2e;
+    --sn-stylekit-passive-color-3: #323233;
     --sn-stylekit-passive-color-4: #202021;
     --sn-stylekit-passive-color-5: #242426;
     --sn-stylekit-passive-color-4-opacity-variant: #232324;
@@ -81,7 +81,7 @@
     --navigation-item-selected-background-color: #2a2a2b;
     --preferences-navigation-icon-color: var(--sn-stylekit-neutral-color);
     --preferences-navigation-selected-background-color: transparent;
-    --dropdown-menu-radio-button-inactive-color: var(--sn-stylekit-passive-color-1);
+    --dropdown-menu-radio-button-inactive-color: var(--background-color);
     --panel-resizer-background-color: var(--editor-title-bar-border-bottom-color);
     --link-element-color: var(--sn-stylekit-info-color);
     --normal-button-background-color: var(--sn-stylekit-background-color);
@@ -105,7 +105,7 @@
 }
 
 .translucent-ui .translucent-ui\:bg-transparent {
-    background-color: none;
+    background-color: var(--background-color);
 }
 
 .translucent-ui .md\:translucent-ui\:bg-transparent {
@@ -154,5 +154,9 @@
 }
 
 .focus\:bg-info-backdrop:focus {
-    background-color: transparent;
+    background-color: var(--background-color);
+}
+
+[role="search"]>div {
+    background-color: var(--item-cell-selected-background-color) !important;
 }
