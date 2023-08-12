@@ -161,6 +161,6 @@
     background-color: var(--item-cell-selected-background-color) !important;
 }
 
-.hover\:bg-contrast:hover {
+.note-view-linking-container>button:hover {
     background-color: var(--sn-stylekit-passive-color-4);
 }

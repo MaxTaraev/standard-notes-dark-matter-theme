@@ -3,6 +3,10 @@ A modern dark theme for [Standard Notes](https://standardnotes.com/)
 
 ![Preview](preview.png)
 
+![Preview](preview-2.png)
+
+![Preview](preview-3.png)
+
 ## Installation
 **Installation Link**: `https://listed.to/p/Gky1d63Dyp`
 
