@@ -160,3 +160,7 @@
 [role="search"]>div {
     background-color: var(--item-cell-selected-background-color) !important;
 }
+
+.hover\:bg-contrast:hover {
+    background-color: var(--sn-stylekit-passive-color-4);
+}
