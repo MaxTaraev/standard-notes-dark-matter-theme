@@ -164,3 +164,7 @@
 .note-view-linking-container>button:hover {
     background-color: var(--sn-stylekit-passive-color-4);
 }
+
+.text-success {
+    color: #1aa772;
+}
