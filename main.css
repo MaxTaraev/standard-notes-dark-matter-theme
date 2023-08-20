@@ -3,6 +3,7 @@
     --background-color: #1b1b1c;
     --highlight-color: #5e3b8f;
     --border-color: transparent;
+    --secondary: 100, 100, 101;
     --sn-component-foreground-color: var(--foreground-color);
     --sn-component-background-color: transparent;
     --sn-component-foreground-highlight-color: var(--highlight-color);
@@ -187,6 +188,14 @@
                 border: var(--lineWidth) solid var(--sn-stylekit-passive-color-3) !important;
                 background: inherit;
             }
+
+            .milkdown-cell-top::after {
+                background: rgba(70, 70, 71, 0.32) !important;
+            }
+
+            .milkdown-cell-top:hover::after {
+                background: rgba(70, 70, 71, 1) !important;
+            }
         }
 
         .code-inline {
@@ -226,92 +235,56 @@
         .hr {
             background-color: var(--sn-stylekit-passive-color-3) !important;
         }
+
+        .list-item::marker {
+            color: #505052 !important;
+        }
+
+        [data-checked="false"] label {
+            color: #505052 !important;
+        }
+
+        [data-checked="true"] label {
+            color: var(--foreground-color) !important;
+        }
+
+        p::selection {
+            background-color: var(--text-selection-background-color) !important;
+        }
+
+        .link {
+            color: var(--highlight-color) !important;
+        }
+
+        .link:hover {
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+
+        .image {
+            background-color: var(--sn-stylekit-passive-color-5) !important;
+            cursor: pointer;
+        }
+
+        .ProseMirror-selectednode {
+            /* outline: transparent !important; */
+            outline: rgb(50, 50, 51) solid 1px !important;
+        }
+
+        .ProseMirror-selectednode::after {
+            background: rgba(223, 223, 232, 0.15) !important;
+        }
+
+        .tooltip-input {
+            background-color: var(--sn-stylekit-passive-color-5) !important;
+
+            button {
+                color: var(--sn-stylekit-paragraph-text-color) !important;
+            }
+
+            button:hover {
+                background-color: var(--sn-stylekit-passive-color-4) !important;
+            }
+        }
     }
-}
-
-/* Markdown Visual editor support https://github.com/standardnotes/plugins/#directory */
-.milkdown .hr {
-    background-color: var(--sn-stylekit-passive-color-3) !important;
-}
-
-.milkdown ::marker {
-    color: #505052 !important;
-}
-
-.milkdown [data-checked="false"] label {
-    color: #505052 !important;
-}
-
-.milkdown [data-checked="true"] label {
-    color: var(--foreground-color) !important;
-}
-
-.milkdown .tableWrapper table th {
-    background-color: var(--sn-stylekit-passive-color-5) !important;
-    border: var(--lineWidth) solid var(--sn-stylekit-passive-color-5) !important;
-}
-
-.milkdown .tableWrapper table td {
-    border: var(--lineWidth) solid var(--sn-stylekit-passive-color-3) !important;
-}
-
-.milkdown .tooltip-input {
-    background-color: var(--sn-stylekit-passive-color-4) !important;
-}
-
-.milkdown .tooltip-input button {
-    color: var(--sn-stylekit-paragraph-text-color) !important;
-}
-
-.milkdown blockquote.blockquote {
-    background-color: var(--sn-stylekit-passive-color-4) !important;
-    border-left: 4px solid var(--highlight-color) !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
-}
-
-.milkdown blockquote.blockquote>p {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-}
-
-.milkdown div.tooltip span.material-icons:hover {
-    background-color: var(--sn-stylekit-passive-color-5) !important;
-}
-
-.milkdown div.tooltip {
-    box-shadow: 0px var(--lineWidth) var(--lineWidth) var(--highlight-color), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2) !important;
-}
-
-.milkdown p::selection {
-    background-color: var(--text-selection-background-color) !important;
-}
-
-.milkdown .tableWrapper table .milkdown-cell-top {
-    background-color: var(--sn-stylekit-passive-color-5) !important;
-}
-
-.milkdown .tableWrapper table .milkdown-cell-left {
-    background-color: var(--sn-stylekit-passive-color-5) !important;
-}
-
-.tableWrapper table .milkdown-cell-top:hover::after {
-    background: var(--highlight-color) !important;
-}
-
-.tableWrapper table .milkdown-cell-left:hover::after {
-    background: var(--highlight-color) !important;
-}
-
-.tableWrapper table .milkdown-cell-top::after {
-    background: transparent !important;
-}
-
-.tableWrapper table .milkdown-cell-left::after {
-    background: transparent !important;
-}
-
-/* Change to rgba */
-.milkdown .ProseMirror-selectednode::after {
-    background: var(--highlight-color) !important;
 }
