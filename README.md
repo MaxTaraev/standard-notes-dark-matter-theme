@@ -1,5 +1,7 @@
 # Standard Notes Dark Matter theme
 A modern dark theme for [Standard Notes](https://standardnotes.com/)
+> [!NOTE]
+> Editor that are part of the paid subscription are NOT supported due to me not having spare cash to buy it :).
 
 ![Preview](preview.png)
 
