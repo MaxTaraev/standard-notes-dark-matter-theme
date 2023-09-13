@@ -1,27 +1,26 @@
 :root {
     --foreground-color: #dfdfe8;
-    --background-color: #1b1b1c;
+    --background-color: #19191a;
     --highlight-color: #5e3b8f;
     --border-color: transparent;
-    --secondary: 100, 100, 101;
     --sn-component-foreground-color: var(--foreground-color);
     --sn-component-background-color: transparent;
     --sn-component-foreground-highlight-color: var(--highlight-color);
     --sn-component-outer-border-color: transparent;
     --sn-component-inner-border-color: var(--foreground-color);
     --sn-stylekit-passive-color-0: #72767e;
-    --sn-stylekit-passive-color-2: #bbbec40a;
-    --sn-stylekit-passive-color-3: #323233;
-    --sn-stylekit-passive-color-4: #202021;
+    --sn-stylekit-passive-color-2: #222224;
+    --sn-stylekit-passive-color-3: #303033;
+    --sn-stylekit-passive-color-4: #1f1f21;
     --sn-stylekit-passive-color-5: #282829;
-    --sn-stylekit-passive-color-4-opacity-variant: #232324;
+    --sn-stylekit-passive-color-4-opacity-variant: var(--item-cell-selected-background-color);
     --sn-stylekit-shadow-color: #000000;
     --sn-stylekit-info-color: var(--highlight-color);
     --sn-stylekit-info-contrast-color: var(--foreground-color);
     --sn-stylekit-info-backdrop-color: var(--item-cell-selected-background-color);
     --sn-stylekit-neutral-color: var(--foreground-color);
     --sn-stylekit-neutral-contrast-color: var(--foreground-color);
-    --sn-stylekit-success-color: #282829;
+    --sn-stylekit-success-color: #262629;
     --sn-stylekit-success-contrast-color: var(--foreground-color);
     --sn-stylekit-warning-color: #cf9728;
     --sn-stylekit-warning-contrast-color: var(--foreground-color);
@@ -47,7 +46,7 @@
     --sn-desktop-titlebar-ui-color: var(--foreground-color);
     --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
     --sn-stylekit-scrollbar-track-border-color: var(--border-color);
-    --sn-stylekit-scrollbar-thumb-color: #252526;
+    --sn-stylekit-scrollbar-thumb-color: #242426;
     --sn-stylekit-menu-border: 1px solid #424242;
     --sn-stylekit-accessory-tint-color-1: #5e3b8f;
 
@@ -73,13 +72,13 @@
     --items-column-border-left-color: var(--sn-stylekit-border-color);
     --items-column-border-right-color: var(--sn-stylekit-border-color);
     --items-column-search-background-color: var(--sn-stylekit-contrast-background-color);
-    --item-cell-selected-background-color: #202021;
+    --item-cell-selected-background-color: #1f1f21;
     --item-cell-selected-border-left-color: var(--sn-stylekit-info-color);
     --navigation-column-background-color: var(--sn-stylekit-secondary-background-color);
     --navigation-section-title-color: var(--sn-stylekit-secondary-foreground-color);
     --navigation-item-text-color: var(--sn-stylekit-secondary-foreground-color);
     --navigation-item-count-color: var(--sn-stylekit-neutral-color);
-    --navigation-item-selected-background-color: #2a2a2b;
+    --navigation-item-selected-background-color: #29292b;
     --preferences-navigation-icon-color: var(--sn-stylekit-neutral-color);
     --preferences-navigation-selected-background-color: transparent;
     --dropdown-menu-radio-button-inactive-color: var(--background-color);
@@ -305,11 +304,11 @@ input::selection {
 }
 
 .milkdown .list-item::marker {
-    color: #505052 !important;
+    color: #4e4e52;
 }
 
 .milkdown [data-checked="false"] label {
-    color: #505052 !important;
+    color: #4e4e52 !important;
 }
 
 .milkdown [data-checked="true"] label {
@@ -325,11 +324,16 @@ input::selection {
     box-shadow: none !important;
 }
 
+.milkdown .link::selection {
+    background-color: var(--text-selection-background-color) !important;
+}
+
 .milkdown .blockquote {
     background-color: var(--sn-stylekit-passive-color-4) !important;
     border-left: 4px solid var(--highlight-color) !important;
     padding-top: 5px !important;
     padding-bottom: 5px !important;
+    padding-left: 1rem !important;
 }
 
 .milkdown .blockquote>p {
@@ -361,55 +365,20 @@ input::selection {
     border: var(--lineWidth) solid var(--sn-stylekit-passive-color-3) !important;
 }
 
-/* ----------------------------------------------------------------------------------------------------------- */
-
-.milkdown ::marker {
-    color: #505052 !important;
-}
-
-.milkdown [data-checked="false"] label {
-    color: #505052 !important;
-}
-
-.milkdown [data-checked="true"] label {
-    color: var(--foreground-color) !important;
-}
-
-.milkdown .tableWrapper table th {
-    background-color: var(--sn-stylekit-passive-color-5) !important;
-    border: var(--lineWidth) solid var(--sn-stylekit-passive-color-5) !important;
-}
-
-.milkdown .tableWrapper table td {
-    border: var(--lineWidth) solid var(--sn-stylekit-passive-color-3) !important;
-}
-
-.milkdown .tooltip-input {
-    background-color: var(--sn-stylekit-passive-color-4) !important;
-}
-
-.milkdown .tooltip-input button {
-    color: var(--sn-stylekit-paragraph-text-color) !important;
-}
-
-.milkdown blockquote.blockquote {
-    background-color: var(--sn-stylekit-passive-color-4) !important;
-    border-left: 4px solid var(--highlight-color) !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
-}
-
-.milkdown blockquote.blockquote>p {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
+.milkdown div.tooltip {
+    box-shadow: 0px var(--lineWidth) var(--lineWidth) var(--highlight-color), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2) !important;
 }
 
 .milkdown div.tooltip span.material-icons:hover {
-    background-color: var(--sn-stylekit-passive-color-5) !important;
+    background-color: var(--sn-stylekit-passive-color-2) !important;
 }
 
-.milkdown div.tooltip {
-    box-shadow: 0px var(--lineWidth) var(--lineWidth) var(--highlight-color), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2) !important;
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .tooltip-input button {
+    color: var(--sn-stylekit-paragraph-text-color) !important;
+}
+
+.milkdown .tooltip-input button:hover {
+    background-color: var(--sn-stylekit-passive-color-4) !important;
 }
 
 .milkdown .tableWrapper table .milkdown-cell-top {
@@ -420,19 +389,19 @@ input::selection {
     background-color: var(--sn-stylekit-passive-color-5) !important;
 }
 
-.tableWrapper table .milkdown-cell-top:hover::after {
+.milkdown .tableWrapper table .milkdown-cell-top:hover::after {
     background: var(--highlight-color) !important;
 }
 
-.tableWrapper table .milkdown-cell-left:hover::after {
+.milkdown .tableWrapper table .milkdown-cell-left:hover::after {
     background: var(--highlight-color) !important;
 }
 
-.tableWrapper table .milkdown-cell-top::after {
+.milkdown .tableWrapper table .milkdown-cell-top::after {
     background: transparent !important;
 }
 
-.tableWrapper table .milkdown-cell-left::after {
+.milkdown .tableWrapper table .milkdown-cell-left::after {
     background: transparent !important;
 }
 
@@ -440,3 +409,29 @@ input::selection {
 .milkdown .ProseMirror-selectednode::after {
     background: var(--highlight-color) !important;
 }
+
+.milkdown .ProseMirror-selectednode {
+    outline: var(--lineWidth) solid rgba(var(--line), 0) !important;
+}
+
+h1.heading.h1 {
+    font-size: 1.4rem !important;
+}
+
+h2.heading.h2 {
+    font-size: 1.3rem !important;
+}
+
+h3.heading.h3 {
+    font-size: 1.2rem !important;
+}
+
+h4.heading.h4 {
+    font-size: 1.1rem !important;
+}
+
+h5.heading.h5 {
+    font-size: 1rem !important;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
