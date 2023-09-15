@@ -1,6 +1,6 @@
 :root {
     --foreground-color: #dfdfe8;
-    --background-color: #19191a;
+    --background-color: #1b1b1c;
     --highlight-color: #5e3b8f;
     --border-color: transparent;
     --sn-component-foreground-color: var(--foreground-color);
@@ -10,8 +10,8 @@
     --sn-component-inner-border-color: var(--foreground-color);
     --sn-stylekit-passive-color-0: #72767e;
     --sn-stylekit-passive-color-2: #222224;
-    --sn-stylekit-passive-color-3: #303033;
-    --sn-stylekit-passive-color-4: #1f1f21;
+    --sn-stylekit-passive-color-3: #313133;
+    --sn-stylekit-passive-color-4: #202021;
     --sn-stylekit-passive-color-5: #282829;
     --sn-stylekit-passive-color-4-opacity-variant: var(--item-cell-selected-background-color);
     --sn-stylekit-shadow-color: #000000;
@@ -20,7 +20,7 @@
     --sn-stylekit-info-backdrop-color: var(--item-cell-selected-background-color);
     --sn-stylekit-neutral-color: var(--foreground-color);
     --sn-stylekit-neutral-contrast-color: var(--foreground-color);
-    --sn-stylekit-success-color: #262629;
+    --sn-stylekit-success-color: #272729;
     --sn-stylekit-success-contrast-color: var(--foreground-color);
     --sn-stylekit-warning-color: #cf9728;
     --sn-stylekit-warning-contrast-color: var(--foreground-color);
@@ -46,7 +46,7 @@
     --sn-desktop-titlebar-ui-color: var(--foreground-color);
     --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
     --sn-stylekit-scrollbar-track-border-color: var(--border-color);
-    --sn-stylekit-scrollbar-thumb-color: #242426;
+    --sn-stylekit-scrollbar-thumb-color: #252526;
     --sn-stylekit-menu-border: 1px solid #424242;
     --sn-stylekit-accessory-tint-color-1: #5e3b8f;
 
@@ -72,13 +72,13 @@
     --items-column-border-left-color: var(--sn-stylekit-border-color);
     --items-column-border-right-color: var(--sn-stylekit-border-color);
     --items-column-search-background-color: var(--sn-stylekit-contrast-background-color);
-    --item-cell-selected-background-color: #1f1f21;
+    --item-cell-selected-background-color: #202021;
     --item-cell-selected-border-left-color: var(--sn-stylekit-info-color);
     --navigation-column-background-color: var(--sn-stylekit-secondary-background-color);
     --navigation-section-title-color: var(--sn-stylekit-secondary-foreground-color);
     --navigation-item-text-color: var(--sn-stylekit-secondary-foreground-color);
     --navigation-item-count-color: var(--sn-stylekit-neutral-color);
-    --navigation-item-selected-background-color: #29292b;
+    --navigation-item-selected-background-color: #272729;
     --preferences-navigation-icon-color: var(--sn-stylekit-neutral-color);
     --preferences-navigation-selected-background-color: transparent;
     --dropdown-menu-radio-button-inactive-color: var(--background-color);
@@ -315,6 +315,21 @@ input::selection {
     color: var(--foreground-color) !important;
 }
 
+/* --- */
+.milkdown .icon {
+    background-color: var(--sn-stylekit-passive-color-4);
+}
+
+/* --- */
+.milkdown .icon:hover {
+    background-color: var(--sn-stylekit-passive-color-2);
+}
+
+/* --- */
+.milkdown .table-tooltip {
+    border: (--lineWidth) solid var(--sn-stylekit-success-color);
+}
+
 .milkdown .link {
     color: var(--highlight-color) !important;
 }
@@ -344,10 +359,15 @@ input::selection {
 .milkdown .code-inline {
     color: var(--sn-stylekit-paragraph-text-color) !important;
     background-color: var(--sn-stylekit-passive-color-5) !important;
-    padding-bottom: 0.5%;
-    padding-top: 0.5%;
+    padding-bottom: 0.1%;
+    padding-top: 0.1%;
     padding-left: 1%;
     padding-right: 1%;
+}
+
+/* --- */
+.milkdown ::selection {
+    background: var(--text-selection-background-color);
 }
 
 .milkdown .image {
@@ -407,31 +427,52 @@ input::selection {
 
 /* Change to rgba */
 .milkdown .ProseMirror-selectednode::after {
-    background: var(--highlight-color) !important;
+    background: rgba(94, 59, 143, 0.10) !important;
 }
 
 .milkdown .ProseMirror-selectednode {
     outline: var(--lineWidth) solid rgba(var(--line), 0) !important;
 }
 
-h1.heading.h1 {
+/* --- */
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h1.heading.h1 {
     font-size: 1.4rem !important;
 }
 
-h2.heading.h2 {
+h1.heading.h1::selection {
+    background-color: var(--text-selection-color);
+}
+
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h2.heading.h2 {
     font-size: 1.3rem !important;
 }
 
-h3.heading.h3 {
+h2.heading.h2::selection {
+    background-color: var(--text-selection-color);
+}
+
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h3.heading.h3 {
     font-size: 1.2rem !important;
 }
 
-h4.heading.h4 {
+h3.heading.h3::selection {
+    background-color: var(--text-selection-color);
+}
+
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h4.heading.h4 {
     font-size: 1.1rem !important;
 }
 
-h5.heading.h5 {
+h4.heading.h4::selection {
+    background-color: var(--text-selection-color);
+}
+
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h5.heading.h5 {
     font-size: 1rem !important;
+}
+
+h5.heading.h5::selection {
+    background-color: var(--text-selection-color);
 }
 
 /* ----------------------------------------------------------------------------------------------------------- */
