@@ -401,6 +401,11 @@ input::selection {
     background-color: var(--sn-stylekit-passive-color-4) !important;
 }
 
+/* --- */
+.milkdown .tooltip-input input::placeholder {
+    opacity: 0.25;
+}
+
 .milkdown .tableWrapper table .milkdown-cell-top {
     background-color: var(--sn-stylekit-passive-color-5) !important;
 }
@@ -427,7 +432,7 @@ input::selection {
 
 /* Change to rgba */
 .milkdown .ProseMirror-selectednode::after {
-    background: rgba(94, 59, 143, 0.10) !important;
+    background: rgba(94, 59, 143, 0.1) !important;
 }
 
 .milkdown .ProseMirror-selectednode {
