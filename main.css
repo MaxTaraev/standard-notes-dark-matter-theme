@@ -78,7 +78,7 @@
     --navigation-section-title-color: var(--sn-stylekit-secondary-foreground-color);
     --navigation-item-text-color: var(--sn-stylekit-secondary-foreground-color);
     --navigation-item-count-color: var(--sn-stylekit-neutral-color);
-    --navigation-item-selected-background-color: #272729;
+    --navigation-item-selected-background-color: #282829;
     --preferences-navigation-icon-color: var(--sn-stylekit-neutral-color);
     --preferences-navigation-selected-background-color: transparent;
     --dropdown-menu-radio-button-inactive-color: var(--background-color);
@@ -161,7 +161,7 @@
 }
 
 .note-view-linking-container>button:hover {
-    background-color: var(--sn-stylekit-passive-color-4);
+    background-color: var(--sn-stylekit-passive-color-5);
 }
 
 .text-success {
@@ -320,6 +320,7 @@
 /* --- */
 .milkdown .table-tooltip {
     box-shadow: 0px var(--lineWidth) var(--lineWidth) var(--highlight-color), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2);
+    border: (--lineWidth) solid var(--sn-stylekit-success-color);
 }
 
 /* --- */
@@ -328,8 +329,8 @@
 }
 
 /* --- */
-.milkdown .table-tooltip {
-    border: (--lineWidth) solid var(--sn-stylekit-success-color);
+.tableWrapper table .column-resize-handle {
+    background: rgba(94, 59, 143, 1);
 }
 
 .milkdown .link {
@@ -395,8 +396,9 @@
     color: var(--sn-stylekit-paragraph-text-color) !important;
 }
 
-.milkdown .tooltip-input button:hover {
-    background-color: var(--sn-stylekit-passive-color-4) !important;
+/* --- */
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .tooltip-input {
+    box-shadow: 0px var(--lineWidth) var(--lineWidth) var(--highlight-color), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2);
 }
 
 /* --- */
