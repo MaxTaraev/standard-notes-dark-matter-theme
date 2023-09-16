@@ -9,10 +9,10 @@
     --sn-component-outer-border-color: transparent;
     --sn-component-inner-border-color: var(--foreground-color);
     --sn-stylekit-passive-color-0: #72767e;
-    --sn-stylekit-passive-color-2: #222224;
+    --sn-stylekit-passive-color-2: #272729;
     --sn-stylekit-passive-color-3: #313133;
     --sn-stylekit-passive-color-4: #202021;
-    --sn-stylekit-passive-color-5: #282829;
+    --sn-stylekit-passive-color-5: #252526;
     --sn-stylekit-passive-color-4-opacity-variant: var(--item-cell-selected-background-color);
     --sn-stylekit-shadow-color: #000000;
     --sn-stylekit-info-color: var(--highlight-color);
@@ -72,7 +72,7 @@
     --items-column-border-left-color: var(--sn-stylekit-border-color);
     --items-column-border-right-color: var(--sn-stylekit-border-color);
     --items-column-search-background-color: var(--sn-stylekit-contrast-background-color);
-    --item-cell-selected-background-color: #202021;
+    --item-cell-selected-background-color: #1f1f21;
     --item-cell-selected-border-left-color: var(--sn-stylekit-info-color);
     --navigation-column-background-color: var(--sn-stylekit-secondary-background-color);
     --navigation-section-title-color: var(--sn-stylekit-secondary-foreground-color);
@@ -295,14 +295,6 @@
     background-color: var(--sn-stylekit-passive-color-3) !important;
 }
 
-input::selection {
-    background-color: var(--text-selection-background-color) !important;
-}
-
-.milkdown p::selection {
-    background-color: var(--text-selection-background-color) !important;
-}
-
 .milkdown .list-item::marker {
     color: #4e4e52;
 }
@@ -316,13 +308,23 @@ input::selection {
 }
 
 /* --- */
-.milkdown .icon {
-    background-color: var(--sn-stylekit-passive-color-4);
+.milkdown .material-icons-outlined {
+    background-color: var(--sn-stylekit-contrast-background-color) !important;
 }
 
 /* --- */
-.milkdown .icon:hover {
-    background-color: var(--sn-stylekit-passive-color-2);
+.milkdown .material-icons-outlined:hover {
+    background-color: var(--sn-stylekit-passive-color-2) !important;
+}
+
+/* --- */
+.milkdown .table-tooltip {
+    box-shadow: 0px var(--lineWidth) var(--lineWidth) var(--highlight-color), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2);
+}
+
+/* --- */
+.tableWrapper table .selectedCell::after {
+    background: rgba(94, 59, 143, 0.2);
 }
 
 /* --- */
@@ -337,10 +339,6 @@ input::selection {
 .milkdown .link:hover {
     background-color: transparent !important;
     box-shadow: none !important;
-}
-
-.milkdown .link::selection {
-    background-color: var(--text-selection-background-color) !important;
 }
 
 .milkdown .blockquote {
@@ -367,7 +365,7 @@ input::selection {
 
 /* --- */
 .milkdown ::selection {
-    background: var(--text-selection-background-color);
+    background: var(--text-selection-background-color) !important;
 }
 
 .milkdown .image {
@@ -444,40 +442,20 @@ input::selection {
     font-size: 1.4rem !important;
 }
 
-h1.heading.h1::selection {
-    background-color: var(--text-selection-color);
-}
-
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h2.heading.h2 {
     font-size: 1.3rem !important;
-}
-
-h2.heading.h2::selection {
-    background-color: var(--text-selection-color);
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h3.heading.h3 {
     font-size: 1.2rem !important;
 }
 
-h3.heading.h3::selection {
-    background-color: var(--text-selection-color);
-}
-
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h4.heading.h4 {
     font-size: 1.1rem !important;
 }
 
-h4.heading.h4::selection {
-    background-color: var(--text-selection-color);
-}
-
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h5.heading.h5 {
     font-size: 1rem !important;
-}
-
-h5.heading.h5::selection {
-    background-color: var(--text-selection-color);
 }
 
 /* ----------------------------------------------------------------------------------------------------------- */
