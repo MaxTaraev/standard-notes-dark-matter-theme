@@ -72,7 +72,7 @@
     --items-column-border-left-color: var(--sn-stylekit-border-color);
     --items-column-border-right-color: var(--sn-stylekit-border-color);
     --items-column-search-background-color: var(--sn-stylekit-contrast-background-color);
-    --item-cell-selected-background-color: #1f1f21;
+    --item-cell-selected-background-color: #202021;
     --item-cell-selected-border-left-color: var(--sn-stylekit-info-color);
     --navigation-column-background-color: var(--sn-stylekit-secondary-background-color);
     --navigation-section-title-color: var(--sn-stylekit-secondary-foreground-color);
@@ -125,7 +125,7 @@
 }
 
 .font-semibold {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .text-passive-2 {
@@ -314,22 +314,22 @@
 
 /* --- */
 .milkdown .material-icons-outlined:hover {
-    background-color: var(--sn-stylekit-passive-color-2) !important;
+    background-color: var(--sn-stylekit-passive-color-5) !important;
 }
 
 /* --- */
 .milkdown .table-tooltip {
-    box-shadow: 0px var(--lineWidth) var(--lineWidth) var(--highlight-color), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2);
+    box-shadow: 0px var(--lineWidth) var(--lineWidth) rgba(94, 59, 143, 0.5), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2);
     border: (--lineWidth) solid var(--sn-stylekit-success-color);
 }
 
 /* --- */
-.tableWrapper table .selectedCell::after {
+.milkdown .tableWrapper table .selectedCell::after {
     background: rgba(94, 59, 143, 0.2);
 }
 
 /* --- */
-.tableWrapper table .column-resize-handle {
+.milkdown .tableWrapper table .column-resize-handle {
     background: rgba(94, 59, 143, 1);
 }
 
@@ -385,11 +385,7 @@
 }
 
 .milkdown div.tooltip {
-    box-shadow: 0px var(--lineWidth) var(--lineWidth) var(--highlight-color), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2) !important;
-}
-
-.milkdown div.tooltip span.material-icons:hover {
-    background-color: var(--sn-stylekit-passive-color-2) !important;
+    box-shadow: 0px var(--lineWidth) var(--lineWidth) rgba(94, 59, 143, 0.5), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2) !important;
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .tooltip-input button {
@@ -397,8 +393,13 @@
 }
 
 /* --- */
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .tooltip-input input {
+    caret-color: var(--sn-stylekit-paragraph-text-color);
+}
+
+/* --- */
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .tooltip-input {
-    box-shadow: 0px var(--lineWidth) var(--lineWidth) var(--highlight-color), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2);
+    box-shadow: 0px var(--lineWidth) var(--lineWidth) rgba(94, 59, 143, 0.5), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2);
 }
 
 /* --- */
@@ -442,22 +443,27 @@
 /* --- */
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h1.heading.h1 {
     font-size: 1.4rem !important;
+    font-weight: 600;
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h2.heading.h2 {
     font-size: 1.3rem !important;
+    font-weight: 600
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h3.heading.h3 {
     font-size: 1.2rem !important;
+    font-weight: 600
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h4.heading.h4 {
     font-size: 1.1rem !important;
+    font-weight: 600
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h5.heading.h5 {
     font-size: 1rem !important;
+    font-weight: 600
 }
 
 /* ----------------------------------------------------------------------------------------------------------- */
