@@ -442,28 +442,33 @@
 
 /* --- */
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h1.heading.h1 {
-    font-size: 1.4rem !important;
+    font-size: 2.3rem !important;
     font-weight: 600;
+    line-height: 3rem;
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h2.heading.h2 {
-    font-size: 1.3rem !important;
-    font-weight: 600
+    font-size: 1.8rem !important;
+    font-weight: 600;
+    line-height: 2.5rem;
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h3.heading.h3 {
-    font-size: 1.2rem !important;
-    font-weight: 600
+    font-size: 1.3rem !important;
+    font-weight: 600;
+    line-height: 2rem;
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h4.heading.h4 {
-    font-size: 1.1rem !important;
-    font-weight: 600
+    font-size: 1rem !important;
+    font-weight: 600;
+    line-height: 1.5rem;
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h5.heading.h5 {
-    font-size: 1rem !important;
-    font-weight: 600
+    font-size: 0.5rem !important;
+    font-weight: 600;
+    line-height: 1rem;
 }
 
 /* ----------------------------------------------------------------------------------------------------------- */
