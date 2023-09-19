@@ -1,6 +1,6 @@
 :root {
     --foreground-color: #dfdfe8;
-    --background-color: #1b1b1c;
+    --background-color: #18181a;
     --highlight-color: #5e3b8f;
     --border-color: transparent;
     --sn-component-foreground-color: var(--foreground-color);
@@ -10,9 +10,9 @@
     --sn-component-inner-border-color: var(--foreground-color);
     --sn-stylekit-passive-color-0: #72767e;
     --sn-stylekit-passive-color-2: #272729;
-    --sn-stylekit-passive-color-3: #313133;
-    --sn-stylekit-passive-color-4: #202021;
-    --sn-stylekit-passive-color-5: #252526;
+    --sn-stylekit-passive-color-3: #2f2f30;
+    --sn-stylekit-passive-color-4: #1d1d1f;
+    --sn-stylekit-passive-color-5: #222224;
     --sn-stylekit-passive-color-4-opacity-variant: var(--item-cell-selected-background-color);
     --sn-stylekit-shadow-color: #000000;
     --sn-stylekit-info-color: var(--highlight-color);
@@ -20,7 +20,7 @@
     --sn-stylekit-info-backdrop-color: var(--item-cell-selected-background-color);
     --sn-stylekit-neutral-color: var(--foreground-color);
     --sn-stylekit-neutral-contrast-color: var(--foreground-color);
-    --sn-stylekit-success-color: #272729;
+    --sn-stylekit-success-color: #252526;
     --sn-stylekit-success-contrast-color: var(--foreground-color);
     --sn-stylekit-warning-color: #cf9728;
     --sn-stylekit-warning-contrast-color: var(--foreground-color);
@@ -46,8 +46,8 @@
     --sn-desktop-titlebar-ui-color: var(--foreground-color);
     --sn-desktop-titlebar-ui-hover-color: var(--highlight-color);
     --sn-stylekit-scrollbar-track-border-color: var(--border-color);
-    --sn-stylekit-scrollbar-thumb-color: #252526;
-    --sn-stylekit-menu-border: 1px solid #424242;
+    --sn-stylekit-scrollbar-thumb-color: #222224;
+    --sn-stylekit-menu-border: 1px solid #414142;
     --sn-stylekit-accessory-tint-color-1: #5e3b8f;
 
     /* Overrides */
@@ -72,13 +72,13 @@
     --items-column-border-left-color: var(--sn-stylekit-border-color);
     --items-column-border-right-color: var(--sn-stylekit-border-color);
     --items-column-search-background-color: var(--sn-stylekit-contrast-background-color);
-    --item-cell-selected-background-color: #202021;
+    --item-cell-selected-background-color: #1d1d1f;
     --item-cell-selected-border-left-color: var(--sn-stylekit-info-color);
     --navigation-column-background-color: var(--sn-stylekit-secondary-background-color);
     --navigation-section-title-color: var(--sn-stylekit-secondary-foreground-color);
     --navigation-item-text-color: var(--sn-stylekit-secondary-foreground-color);
     --navigation-item-count-color: var(--sn-stylekit-neutral-color);
-    --navigation-item-selected-background-color: #282829;
+    --navigation-item-selected-background-color: #242426;
     --preferences-navigation-icon-color: var(--sn-stylekit-neutral-color);
     --preferences-navigation-selected-background-color: transparent;
     --dropdown-menu-radio-button-inactive-color: var(--background-color);
@@ -124,9 +124,9 @@
     font-weight: 500;
 }
 
-.font-semibold {
+/* .font-semibold {
     font-weight: 600;
-}
+} */
 
 .text-passive-2 {
     color: var(--sn-stylekit-paragraph-text-color);
@@ -296,11 +296,11 @@
 }
 
 .milkdown .list-item::marker {
-    color: #4e4e52;
+    color: #49494d;
 }
 
 .milkdown [data-checked="false"] label {
-    color: #4e4e52 !important;
+    color: #49494d !important;
 }
 
 .milkdown [data-checked="true"] label {
@@ -443,31 +443,31 @@
 /* --- */
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h1.heading.h1 {
     /* font-size: 2.3rem !important; */
-    font-weight: 600;
+    font-weight: bold;
     /* line-height: 3rem; */
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h2.heading.h2 {
     /* font-size: 1.8rem !important; */
-    font-weight: 600;
+    font-weight: bold;
     /* line-height: 2.5rem; */
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h3.heading.h3 {
     /* font-size: 1.3rem !important; */
-    font-weight: 600;
+    font-weight: bold;
     /* line-height: 2rem; */
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h4.heading.h4 {
     /* font-size: 1rem !important; */
-    font-weight: 600;
+    font-weight: bold;
     /* line-height: 1.5rem; */
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h5.heading.h5 {
     /* font-size: 0.5rem !important; */
-    font-weight: 600;
+    font-weight: bold;
     /* line-height: 1rem; */
 }
 
