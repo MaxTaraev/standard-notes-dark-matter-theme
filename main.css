@@ -537,17 +537,17 @@
     background-color: var(--sn-stylekit-passive-color-2) !important;
 }
 
-.milkdown .cm-editor .cm-line::selection {
-    background-color: var(--text-selection-background-color);
+.milkdown .codemirror-container .cm-line::selection {
+    background-color: var(--text-selection-background-color) !important;
 }
 
-.milkdown .cm-editor .cm-matchingBracket {
-    background-color: transparent;
+.milkdown .codemirror-container .cm-focused .cm-matchingBracket {
+    background-color: transparent !important;
 }
 
-.milkdown .cm-editor .cm-foldPlaceholder {
-    background-color: var(--sn-stylekit-passive-color-5);
-    border: 1px solid var(--sn-stylekit-passive-color-5);
+.milkdown .codemirror-container .cm-line .cm-foldPlaceholder {
+    background-color: var(--sn-stylekit-passive-color-5) !important;
+    border: 1px solid var(--sn-stylekit-passive-color-5) !important;
 }
 
 /* ----------------------------------------------------------------------------------------------------------- */
