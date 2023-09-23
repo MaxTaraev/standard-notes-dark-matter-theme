@@ -520,4 +520,8 @@
     background-color: var(--sn-stylekit-passive-color-3);
 }
 
+.container .milkdown-container .milkdown-menu-wrapper .milkdown-menu .button.active {
+    background-color: var(--sn-stylekit-passive-color-2);
+}
+
 /* ----------------------------------------------------------------------------------------------------------- */
