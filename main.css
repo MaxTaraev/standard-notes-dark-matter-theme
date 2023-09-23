@@ -384,7 +384,7 @@
 
 .milkdown .code-fence .code-fence_value>.icon:hover {
     color: rgba(94, 59, 143, 1);
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .milkdown .code-fence .code-fence_select {
