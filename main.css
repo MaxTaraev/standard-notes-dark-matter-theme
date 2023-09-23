@@ -372,6 +372,10 @@
     background-color: var(--sn-stylekit-passive-color-4);
 }
 
+.milkdown .token {
+    font-family: var(--code);
+}
+
 .milkdown .code-fence .code-fence_value {
     box-shadow: none;
     border: transparent;
@@ -432,6 +436,10 @@
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .tooltip-input button {
     color: var(--sn-stylekit-paragraph-text-color) !important;
+}
+
+.container .milkdown-container .milkdown-menu-wrapper .milkdown .tooltip-input button:hover {
+    background-color: var(--sn-stylekit-passive-color-4);
 }
 
 /* --- */
