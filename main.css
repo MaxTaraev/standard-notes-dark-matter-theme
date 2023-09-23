@@ -537,15 +537,15 @@
     background-color: var(--sn-stylekit-passive-color-2) !important;
 }
 
-.milkdown .codemirror-container .cm-line::selection {
+.codemirror-container .cm-line::selection {
     background-color: var(--text-selection-background-color) !important;
 }
 
-.milkdown .codemirror-container .cm-focused .cm-matchingBracket {
+.codemirror-container .cm-focused .cm-matchingBracket {
     background-color: transparent !important;
 }
 
-.milkdown .codemirror-container .cm-line .cm-foldPlaceholder {
+.codemirror-container .cm-line .cm-foldPlaceholder {
     background-color: var(--sn-stylekit-passive-color-5) !important;
     border: 1px solid var(--sn-stylekit-passive-color-5) !important;
 }
