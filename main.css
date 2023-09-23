@@ -537,4 +537,17 @@
     background-color: var(--sn-stylekit-passive-color-2) !important;
 }
 
+.milkdown .cm-editor .cm-line::selection {
+    background-color: var(--text-selection-background-color);
+}
+
+.milkdown .cm-editor .cm-matchingBracket {
+    background-color: transparent;
+}
+
+.milkdown .cm-editor .cm-foldPlaceholder {
+    background-color: var(--sn-stylekit-passive-color-5);
+    border: 1px solid var(--sn-stylekit-passive-color-5);
+}
+
 /* ----------------------------------------------------------------------------------------------------------- */
