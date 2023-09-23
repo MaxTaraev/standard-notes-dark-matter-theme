@@ -78,7 +78,7 @@
     --navigation-section-title-color: var(--sn-stylekit-secondary-foreground-color);
     --navigation-item-text-color: var(--sn-stylekit-secondary-foreground-color);
     --navigation-item-count-color: var(--sn-stylekit-neutral-color);
-    --navigation-item-selected-background-color: hsl(240deg 3% 15%);
+    --navigation-item-selected-background-color: hsl(240deg 3% 16%);
     --preferences-navigation-icon-color: var(--sn-stylekit-neutral-color);
     --preferences-navigation-selected-background-color: transparent;
     --dropdown-menu-radio-button-inactive-color: var(--background-color);
@@ -384,21 +384,26 @@
 
 .milkdown .code-fence .code-fence_value>.icon:hover {
     color: rgba(94, 59, 143, 1);
+    background-color: transparent;
 }
 
 .milkdown .code-fence .code-fence_select {
     border: transparent;
-    background-color: var(--sn-stylekit-passive-color-2);
-    box-shadow: 0px var(--lineWidth) var(--lineWidth) rgba(94, 59, 143, 0.5), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2);
+    background-color: var(--background-color);
+    box-shadow: none;
 }
 
 .milkdown .code-fence .code-fence_select>.code-fence_select-option:hover {
-    background: var(--sn-stylekit-passive-color-2);
+    background: var(--sn-stylekit-passive-color-5);
     color: var(--foreground-color);
 }
 
 .milkdown .code-fence .code-fence_select::-webkit-scrollbar-thumb {
     background-color: rgba(94, 59, 143, 0.5);
+}
+
+.milkdown .code-fence .code-fence_select::-webkit-scrollbar-thumb:hover {
+    background-color: var(--highlight-color);
 }
 
 /* --- */
@@ -521,7 +526,7 @@
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown-menu .button.active {
-    background-color: var(--sn-stylekit-passive-color-2);
+    background-color: var(--sn-stylekit-passive-color-2) !important;
 }
 
 /* ----------------------------------------------------------------------------------------------------------- */
