@@ -89,7 +89,10 @@
     --popover-border-color: var(--sn-stylekit-passive-color-3);
 }
 
+/* ----------------------------------------------------------------------------------------------------------- */
 /* Custom overrides */
+/* ----------------------------------------------------------------------------------------------------------- */
+
 .mb-3.flex.max-w-full.flex-col.rounded.border.border-solid.border-border.bg-default.p-6 {
     background-color: var(--sn-stylekit-passive-color-4);
     border-color: var(--sn-stylekit-success-color);
@@ -123,10 +126,6 @@
 #navigation {
     font-weight: 500;
 }
-
-/* .font-semibold {
-    font-weight: 600;
-} */
 
 .text-passive-2 {
     color: var(--sn-stylekit-paragraph-text-color);
@@ -168,125 +167,6 @@
     color: #1aa772;
 }
 
-/* Markdown Visual editor stylesheet https://github.com/standardnotes/plugins/blob/main/packages/com.sncommunity.markdown-visual/src/components/Milkdown/styles.scss */
-.milkdown {
-    .editor {
-        .tableWrapper table {
-            border-color: var(--sn-stylekit-border-color);
-
-            th {
-                color: var(--sn-stylekit-neutral-contrast-color);
-                border: var(--lineWidth) solid var(--sn-stylekit-passive-color-5) !important;
-                background-color: var(--sn-stylekit-passive-color-5) !important;
-                background-clip: padding-box;
-            }
-
-            td {
-                color: var(--sn-stylekit-paragraph-text-color);
-                border: var(--lineWidth) solid var(--sn-stylekit-passive-color-3) !important;
-                background: inherit;
-            }
-
-            .milkdown-cell-top::after {
-                background: rgba(70, 70, 71, 0.32) !important;
-            }
-
-            .milkdown-cell-top:hover::after {
-                background: rgba(70, 70, 71, 1) !important;
-            }
-        }
-
-        .code-inline {
-            color: var(--sn-stylekit-paragraph-text-color);
-            background-color: var(--sn-stylekit-passive-color-5);
-            padding-bottom: 0.5%;
-            padding-top: 0.5%;
-            padding-left: 1%;
-            padding-right: 1%;
-        }
-
-        .slash-dropdown {
-            background-color: var(--sn-stylekit-contrast-background-color) !important;
-            border-color: var(--sn-stylekit-border-color) !important;
-
-            .slash-dropdown-item {
-                color: var(--sn-stylekit-paragraph-text-color) !important;
-
-                .icon {
-                    color: var(--sn-stylekit-paragraph-text-color) !important;
-                }
-            }
-        }
-
-        .blockquote {
-            background-color: var(--sn-stylekit-passive-color-4) !important;
-            border-left: 4px solid var(--highlight-color) !important;
-            padding-top: 5px !important;
-            padding-bottom: 5px !important;
-        }
-
-        .blockquote>p {
-            margin-top: 0px !important;
-            margin-bottom: 0px !important;
-        }
-
-        .hr {
-            background-color: var(--sn-stylekit-passive-color-3) !important;
-        }
-
-        .list-item::marker {
-            color: #505052 !important;
-        }
-
-        [data-checked="false"] label {
-            color: #505052 !important;
-        }
-
-        [data-checked="true"] label {
-            color: var(--foreground-color) !important;
-        }
-
-        p::selection {
-            background-color: var(--text-selection-background-color) !important;
-        }
-
-        .link {
-            color: var(--highlight-color) !important;
-        }
-
-        .link:hover {
-            background-color: transparent !important;
-            box-shadow: none !important;
-        }
-
-        .image {
-            background-color: var(--sn-stylekit-passive-color-5) !important;
-            cursor: pointer;
-        }
-
-        .ProseMirror-selectednode {
-            /* outline: transparent !important; */
-            outline: rgb(50, 50, 51) solid 1px !important;
-        }
-
-        .ProseMirror-selectednode::after {
-            background: rgba(223, 223, 232, 0.15) !important;
-        }
-
-        .tooltip-input {
-            background-color: var(--sn-stylekit-passive-color-5) !important;
-
-            button {
-                color: var(--sn-stylekit-paragraph-text-color) !important;
-            }
-
-            button:hover {
-                background-color: var(--sn-stylekit-passive-color-4) !important;
-            }
-        }
-    }
-}
-
 /* ----------------------------------------------------------------------------------------------------------- */
 /* Markdown Visual editor support https://github.com/standardnotes/plugins/#directory */
 /* ----------------------------------------------------------------------------------------------------------- */
@@ -307,17 +187,14 @@
     color: var(--foreground-color) !important;
 }
 
-/* --- */
 .milkdown .material-icons-outlined {
     background-color: var(--sn-stylekit-contrast-background-color) !important;
 }
 
-/* --- */
 .milkdown .material-icons-outlined:hover {
     background-color: var(--sn-stylekit-passive-color-5) !important;
 }
 
-/* --- */
 .milkdown .table-tooltip {
     box-shadow: 0px var(--lineWidth) var(--lineWidth) rgba(94, 59, 143, 0.5), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2);
     border: (--lineWidth) solid var(--sn-stylekit-success-color);
@@ -327,12 +204,10 @@
     background: transparent;
 }
 
-/* --- */
 .milkdown .tableWrapper table .selectedCell::after {
     background: rgba(94, 59, 143, 0.2);
 }
 
-/* --- */
 .milkdown .tableWrapper table .column-resize-handle {
     background: rgba(94, 59, 143, 1);
 }
@@ -410,7 +285,6 @@
     background-color: var(--highlight-color);
 }
 
-/* --- */
 .milkdown ::selection {
     background: var(--text-selection-background-color) !important;
 }
@@ -420,7 +294,6 @@
     cursor: pointer;
 }
 
-/* Trying to override a rule that already has !important property https://stackoverflow.com/questions/11178673/how-to-override-important */
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor .tableWrapper table th {
     background-color: var(--sn-stylekit-passive-color-5) !important;
     border: var(--lineWidth) solid var(--sn-stylekit-passive-color-5) !important;
@@ -442,17 +315,14 @@
     background-color: var(--sn-stylekit-passive-color-4);
 }
 
-/* --- */
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .tooltip-input input {
     caret-color: var(--sn-stylekit-paragraph-text-color);
 }
 
-/* --- */
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .tooltip-input {
     box-shadow: 0px var(--lineWidth) var(--lineWidth) rgba(94, 59, 143, 0.5), 0px 2px var(--lineWidth) rgba(var(--shadow), 0.12), 0px var(--lineWidth) 3px rgba(var(--shadow), 0.2);
 }
 
-/* --- */
 .milkdown .tooltip-input input::placeholder {
     opacity: 0.25;
 }
@@ -481,7 +351,6 @@
     background: transparent !important;
 }
 
-/* Change to rgba */
 .milkdown .ProseMirror-selectednode::after {
     background: rgba(94, 59, 143, 0.1) !important;
 }
@@ -490,7 +359,6 @@
     outline: var(--lineWidth) solid rgba(var(--line), 0) !important;
 }
 
-/* --- */
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h1.heading.h1 {
     font-size: 2.6rem !important;
     font-weight: bold;
