@@ -492,27 +492,27 @@
 
 /* --- */
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h1.heading.h1 {
-    /* font-size: 2.3rem !important; */
+    font-size: 2.6rem !important;
     font-weight: bold;
-    /* line-height: 3rem; */
+    line-height: 3.3rem;
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h2.heading.h2 {
-    /* font-size: 1.8rem !important; */
+    font-size: 2.1rem !important;
     font-weight: bold;
-    /* line-height: 2.5rem; */
+    line-height: 2.8rem;
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h3.heading.h3 {
-    /* font-size: 1.3rem !important; */
+    font-size: 1.6rem !important;
     font-weight: bold;
-    /* line-height: 2rem; */
+    line-height: 2.05rem;
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h4.heading.h4 {
-    /* font-size: 1rem !important; */
+    font-size: 1.3rem !important;
     font-weight: bold;
-    /* line-height: 1.5rem; */
+    line-height: 1.8rem;
 }
 
 .container .milkdown-container .milkdown-menu-wrapper .milkdown .editor h5.heading.h5 {
@@ -543,10 +543,6 @@
 
 .codemirror-container .cm-line *::selection {
     background-color: var(--text-selection-background-color) !important;
-}
-
-.codemirror-container .cm-line {
-    caret-color: var(--editor-foreground-color) !important;
 }
 
 .codemirror-container .cm-line:focus {
