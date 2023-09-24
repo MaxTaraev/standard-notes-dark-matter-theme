@@ -541,6 +541,18 @@
     background-color: var(--text-selection-background-color) !important;
 }
 
+.codemirror-container .cm-line *::selection {
+    background-color: var(--text-selection-background-color) !important;
+}
+
+.codemirror-container .cm-line {
+    caret-color: var(--editor-foreground-color) !important;
+}
+
+.codemirror-container .cm-line:focus {
+    background-color: var(--text-selection-background-color) !important;
+}
+
 .codemirror-container .cm-focused .cm-matchingBracket {
     background-color: transparent !important;
 }
