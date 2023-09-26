@@ -1,6 +1,6 @@
 # **Standard Notes - Dark Matter theme**
 > [!IMPORTANT]
-> Editors that are part of the paid subscription are **NOT SUPPORTED** due to me not having spare cash to buy it :)
+> Paid SN features **WERE NOT TESTED** due to me not having spare cash to purchase the subscription :)
 > If you would like to contribute and cover the paid features - feel free to create a pull request.
 
 ![Preview](preview.png)
