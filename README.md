@@ -1,4 +1,4 @@
-# **Standard Notes - Dark Matter theme**
+# **Standard Notes - Dark matter theme**
 > [!IMPORTANT]
 > Paid SN features **WERE NOT TESTED** due to me not having spare cash to purchase the subscription :)
 > If you would like to contribute and cover the paid features - feel free to create a pull request.
